@@ -326,7 +326,8 @@ section{padding:88px 0;}
   font-family:var(--font-fredoka), sans-serif;font-style:italic;
   font-size:1.15rem;color:var(--dusk);margin-bottom:12px;
 }
-.qa-post .qa-answer{color:var(--muted);font-size:0.98rem;}
+.qa-post .qa-answer{color:var(--muted);font-size:0.98rem;margin:0;}
+.qa-post .qa-answer + .qa-answer{margin-top:12px;}
 .qa-post .qa-date{
   font-family:var(--font-space-mono), monospace;font-size:0.68rem;
   letter-spacing:0.08em;text-transform:uppercase;color:var(--gold-deep);

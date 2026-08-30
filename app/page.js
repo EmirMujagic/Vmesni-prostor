@@ -108,7 +108,11 @@ export default function HomePage() {
               <div className="qa-post" key={i}>
                 <span className="qa-date">{post.date}</span>
                 <div className="qa-question">{post.question}</div>
-                <p className="qa-answer">{post.answer}</p>
+                {post.answer.map((para, j) => (
+                  <p className="qa-answer" key={j}>
+                    {para}
+                  </p>
+                ))}
               </div>
             ))}
           </div>
