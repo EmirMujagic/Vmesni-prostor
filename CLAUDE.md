@@ -5,6 +5,7 @@ Enostranska (single-page) marketinška/landing stran za psihološko podporo star
 - Vsak predlog spremembe naj bo preveden v konkretno kodo, ne v navodila zanjo.
 - Ne predlagaj, da nekaj "sama popravi v kodi" — vedno naredi spremembo namesto nje.
 - Razlage naj bodo v vsakdanjem jeziku (barve, besedilo, razmiki), ne v git/HTML žargonu, razen če izrecno vpraša za tehnične podrobnosti.
+- **Pri bolj kompleksnih stvareh** (arhitekturne odločitve, nekaj kar pomembno vpliva na strukturo/delovanje strani, ne samo majhen tekstovni/vizualni popravek) naj Kristina vprašanje najprej naslovi na Emirja (fanta), ne da se odloči/izvede sama neposredno prek Claude-a. Za manjše, jasne spremembe (besedilo, barve, slike) to ni potrebno.
 
 ## Tech stack — namerno preprost
 
@@ -36,7 +37,8 @@ Sekcije po vrstnem redu (id atributi v oklepaju):
 
 - Repo: https://github.com/EmirMujagic/Vmesni-prostor (veja `main`)
 - Hosting: Vercel, povezan na ta GitHub repo — **vsak push na `main` avtomatsko sproži nov deploy**. To pomeni: ko je sprememba potrjena in pushana, je v nekaj minutah živa na produkciji brez dodatnega koraka.
-- Ker gre direktno v produkcijo, pred pushem na `main`:
+- **Ni treba pushati po vsaki spremembi.** Lahko se lokalno naredi več commitov/sprememb zapored (Kristina preverja lokalno prek F5), push na `main` (in s tem live deploy) naj gre šele ko je set sprememb res gotov oz. ko uporabnik izrecno reče naj pushaš.
+- Ker gre push direktno v produkcijo:
   - Naredi commit z jasnim, kratkim sporočilom (kaj se je spremenilo, v slovenščini ali angleščini, ni pomembno).
   - Pri vsebinskih/vizualnih spremembah raje pokaži povzetek spremembe uporabniku pred pushem, razen če je izrecno rečeno naj kar pushaš direktno.
 - Git identiteta v tem repoju: `emirmujagic20@gmail.com` (lokalno nastavljeno v `.git/config`, ne globalno).
