@@ -6,6 +6,7 @@ Enostranska (single-page) marketinška/landing stran za psihološko podporo star
 - Ne predlagaj, da nekaj "sama popravi v kodi" — vedno naredi spremembo namesto nje.
 - Razlage naj bodo v vsakdanjem jeziku (barve, besedilo, razmiki), ne v git/HTML žargonu, razen če izrecno vpraša za tehnične podrobnosti.
 - **Pri bolj kompleksnih stvareh** (arhitekturne odločitve, nekaj kar pomembno vpliva na strukturo/delovanje strani, ne samo majhen tekstovni/vizualni popravek) naj Kristina vprašanje najprej naslovi na Emirja (fanta), ne da se odloči/izvede sama neposredno prek Claude-a. Za manjše, jasne spremembe (besedilo, barve, slike) to ni potrebno.
+- **Prvi zagon lokalnega dev okolja** (npr. ko bo treba prvič pognati `npm run dev` / lokalni strežnik, recimo ob prehodu na Next.js) naj ji NE razlagam kot navodila po korakih — namesto tega ji povej, da ji bo pri tem pomagal Emir osebno.
 
 ## Tech stack — namerno preprost
 
