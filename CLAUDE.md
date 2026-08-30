@@ -41,6 +41,16 @@ Sekcije po vrstnem redu (id atributi v oklepaju):
   - Pri vsebinskih/vizualnih spremembah raje pokaži povzetek spremembe uporabniku pred pushem, razen če je izrecno rečeno naj kar pushaš direktno.
 - Git identiteta v tem repoju: `emirmujagic20@gmail.com` (lokalno nastavljeno v `.git/config`, ne globalno).
 
+## Prihodnost: kdaj preiti z enega HTML-ja na framework
+
+Trenutno je stran namerno en sam statičen `index.html` (glej zgoraj). To drži **dokler Kristina ne potrdi, da dejansko rabi več podstrani** (npr. ločen blog/arhiv z več objavami, ločene strani za storitve ipd., ne samo sekcije na eni strani).
+
+Ko se to zgodi:
+- **Jaz (Claude) izberem način kodiranja** ob tistem trenutku, glede na takratne dejanske zahteve — ni treba spraševati uporabnika za tehnično odločitev, samo izvedi.
+- Trenutna smer razmišljanja (lahko se ob dejanski odločitvi ponovno presodi): **Next.js**, ker Vercel je zanj optimiziran, skupni layout (nav/footer) reši težavo s podvajanjem kode po straneh, deploy ostane enako preprost (push → live).
+- Ob selitvi bo treba na tem računalniku najprej namestiti **Node.js** (trenutno ni nameščen).
+- Netehnično lokalno preverjanje sprememb (glej zgoraj: F5 na lokalni datoteki) se ob selitvi zamenja z **Vercel preview linki** (vsak push/branch dobi svoj testni URL) — to je za Kristino v praksi enako ali bolj priročno kot lokalna datoteka, ni potreben lokalen dev server.
+
 ## Kaj NE narediti brez vprašanja
 
 - Ne spreminjaj imena glavne datoteke (`index.html`) — Vercel jo servira na root URL.
