@@ -1,5 +1,3 @@
-import Testimonials from "../../components/Testimonials";
-
 export const metadata = {
   title: "Storitve — Vmesni prostor",
   description: "Od hitrega odgovora do rednega spremljanja — psihološko svetovanje za starše najstnikov.",
@@ -85,8 +83,6 @@ export default function StoritvePage() {
           </div>
         </div>
       </section>
-
-      <Testimonials />
     </>
   );
 }
