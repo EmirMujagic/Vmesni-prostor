@@ -102,6 +102,11 @@ export default function HomePage() {
           <div className="section-head">
             <span className="eyebrow">Objavljeno</span>
             <h2>Vprašanja bralcev in odgovori</h2>
+            <p>
+              Nekatera vprašanja in odgovore objavljam javno, ker si želim, da je Vmesni prostor dostopen
+              prav vsem staršem — ne le tistim, ki si lahko privoščijo individualno svetovanje. Tako lahko
+              od enega vprašanja koristi marsikdo, ki se znajde v podobni situaciji.
+            </p>
           </div>
           <div className="qa-list">
             {qaPosts.map((post, i) => (
