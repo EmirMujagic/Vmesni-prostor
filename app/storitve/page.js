@@ -52,22 +52,6 @@ export default function StoritvePage() {
 
       <section>
         <div className="wrap">
-          <div className="services-ladder">
-            {rungs.map((r) => (
-              <div className="rung" key={r.title}>
-                <div className="rung-tag">{r.tag}</div>
-                <div>
-                  <h3>{r.title}</h3>
-                  <p>{r.text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="wrap">
           <div className="section-head">
             <span className="eyebrow">Kako poteka</span>
             <h2>Preprosto, brez zapletenega postopka</h2>
@@ -78,6 +62,22 @@ export default function StoritvePage() {
                 <span className="eyebrow">{s.eyebrow}</span>
                 <h3>{s.title}</h3>
                 <p>{s.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="wrap">
+          <div className="services-ladder">
+            {rungs.map((r) => (
+              <div className="rung" key={r.title}>
+                <div className="rung-tag">{r.tag}</div>
+                <div>
+                  <h3>{r.title}</h3>
+                  <p>{r.text}</p>
+                </div>
               </div>
             ))}
           </div>

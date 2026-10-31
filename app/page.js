@@ -7,7 +7,7 @@ import { examples } from "../data/examples";
 export default function HomePage() {
   return (
     <>
-      <header className="hero">
+      <header className="hero" id="prevajalnik">
         <div className="wrap">
           <div className="hero-grid">
             <div>
@@ -66,8 +66,13 @@ export default function HomePage() {
               <span className="eyebrow on-dusk">Zastavi vprašanje</span>
               <h2>Imaš svoje vprašanje ali dilemo?</h2>
               <p>
-                Napiši splošno vprašanje ali dilemo — izbrana vprašanja javno obravnavam spodaj, brez
-                razkritja tvojega imena. Za osebno, poglobljeno svetovanje si oglej{" "}
+                Preden napišeš vprašanje, preizkusi{" "}
+                <a href="#prevajalnik" style={{ color: "inherit", textDecoration: "underline" }}>
+                  prevajalnik
+                </a>{" "}
+                zgoraj — morda je odgovor na tvojo dilemo že tam. Če ne, napiši splošno vprašanje ali
+                dilemo — izbrana vprašanja javno obravnavam spodaj, brez razkritja tvojega imena. Za
+                osebno, poglobljeno svetovanje si oglej{" "}
                 <Link href="/storitve" style={{ color: "inherit", textDecoration: "underline" }}>
                   storitve
                 </Link>
