@@ -2,35 +2,37 @@ import Link from "next/link";
 import TranslatorWidget from "../components/TranslatorWidget";
 import QaForm from "../components/QaForm";
 import QaList from "../components/QaList";
-import HeroButterflies from "../components/HeroButterflies";
+import HeroScene from "../components/HeroScene";
 import { examples } from "../data/examples";
 
 export default function HomePage() {
   return (
     <>
-      <header className="hero hero-open" id="prevajalnik">
+      <header className="hero" id="prevajalnik">
         <div className="wrap">
-          <div className="hero-intro">
-            <span className="eyebrow on-dusk">Psihološka podpora in svetovanje</span>
-            <h1>
-              Otroci in najstniki govorijo v svojem jeziku. Pomagam vam <em>ga razumeti</em>.
-            </h1>
-            <p className="lede">
-              Starševstvo je ena najbolj zahtevnih vlog, ki se je, tako kot hojo ali govor, vedno znova
-              učimo. Tukaj je varen prostor za starše, ki iščejo konkretne rešitve in si želijo bolje
-              razumeti svoje otroke.
-            </p>
-            <div className="hero-ctas">
-              <a className="btn-primary" href="#vprasaj">
-                Vstopi v prevajalnik
-              </a>
-              <Link className="btn-ghost on-dusk" href="/storitve">
-                Poglej storitve
-              </Link>
+          <div className="hero-grid">
+            <div>
+              <span className="eyebrow on-dusk">Psihološka podpora in svetovanje</span>
+              <h1>
+                Otroci in najstniki govorijo v svojem jeziku. Pomagam vam <em>ga razumeti</em>.
+              </h1>
+              <p className="lede">
+                Starševstvo je ena najbolj zahtevnih vlog, ki se je, tako kot hojo ali govor, vedno znova
+                učimo. Tukaj je varen prostor za starše, ki iščejo konkretne rešitve in si želijo bolje
+                razumeti svoje otroke.
+              </p>
+              <div className="hero-ctas">
+                <a className="btn-primary" href="#vprasaj">
+                  Vstopi v prevajalnik
+                </a>
+                <Link className="btn-ghost on-dusk" href="/storitve">
+                  Poglej storitve
+                </Link>
+              </div>
             </div>
+            <HeroScene />
           </div>
         </div>
-        <HeroButterflies />
       </header>
 
       <section className="translator-section">
