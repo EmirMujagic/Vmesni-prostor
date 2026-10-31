@@ -179,43 +179,37 @@ nav.site-nav .wrap{
 .hero-scene{
   position:relative;
   width:100%;
-  max-width:440px;
+  max-width:400px;
   margin-left:auto;
 }
-.hands-bouquet{width:100%;height:auto;display:block;}
-@media (max-width:860px){
-  .hero-scene{max-width:320px;margin:0 auto;}
+.hero-illustration{
+  width:100%;height:auto;display:block;
+  color:var(--gold);
+  animation:hero-illustration-float 6s ease-in-out infinite;
 }
-
-.bouquet-butterfly{
-  transform-origin:298px 90px;
-  animation:bouquet-butterfly-bob 4s ease-in-out infinite;
+@keyframes hero-illustration-float{
+  0%, 100%{transform:translateY(0);}
+  50%{transform:translateY(-10px);}
 }
-.bouquet-wing-left, .bouquet-wing-right{
-  transform-box:fill-box;
-  transform-origin:center;
-  animation:butterfly-flap 0.42s ease-in-out infinite;
+.hero-scene-sparkle{
+  position:absolute;
+  width:10px;height:10px;
+  background:var(--gold);
+  clip-path:polygon(50% 0%, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0% 50%, 39% 39%);
+  animation:sparkle-twinkle 2.4s ease-in-out infinite;
 }
-.bouquet-wing-right{animation-delay:0.01s;}
-@keyframes bouquet-butterfly-bob{
-  0%, 100%{transform:translate(0,0);}
-  50%{transform:translate(6px,-10px);}
-}
-.sparkle-twinkle{
-  transform-box:fill-box;
-  transform-origin:center;
-  animation:sparkle-twinkle 2.6s ease-in-out infinite;
-}
+.hero-scene-sparkle-1{top:6%;left:10%;animation-delay:0s;}
+.hero-scene-sparkle-2{top:18%;right:8%;width:7px;height:7px;animation-delay:0.8s;}
+.hero-scene-sparkle-3{bottom:30%;left:2%;width:8px;height:8px;animation-delay:1.5s;}
 @keyframes sparkle-twinkle{
-  0%, 100%{opacity:0.25;transform:scale(0.7);}
+  0%, 100%{opacity:0.2;transform:scale(0.6);}
   50%{opacity:1;transform:scale(1);}
 }
-@media (prefers-reduced-motion: reduce){
-  .bouquet-butterfly, .sparkle-twinkle{animation:none;}
+@media (max-width:860px){
+  .hero-scene{max-width:300px;margin:0 auto;}
 }
-@keyframes butterfly-flap{
-  0%, 100%{transform:scaleX(1);}
-  50%{transform:scaleX(0.55);}
+@media (prefers-reduced-motion: reduce){
+  .hero-illustration, .hero-scene-sparkle{animation:none;}
 }
 
 /* TRANSLATOR WIDGET */
