@@ -70,8 +70,9 @@ export default function HomePage() {
                   Preizkusi prevajalnik
                 </a>{" "}
                 — zastavi dilemo, dvom ali vprašanje. Na tvoje vprašanje odgovorim poglobljeno skozi
-                prizmo strokovnosti in psihološkega znanja. Izbrana vprašanja javno obravnavam spodaj,
-                brez razkritja tvojega imena. Za osebno, poglobljeno svetovanje si oglej{" "}
+                prizmo strokovnosti in psihološkega znanja. Določena vprašanja objavim javno, brez
+                razkritja tvojega imena, za namen pomoči ljudem v podobni stiski. Za osebno, poglobljeno
+                svetovanje si oglej{" "}
                 <Link href="/storitve" style={{ color: "inherit", textDecoration: "underline" }}>
                   storitve
                 </Link>
