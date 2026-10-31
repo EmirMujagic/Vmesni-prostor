@@ -34,9 +34,10 @@ export default function OMeniPage() {
                 je večinoma prazen.
               </p>
               <p>
-                Ta prostor je nastal, ker starši redko dobijo konkretno rešitev. Teorije je na voljo veliko
-                — člankov, nasvetov, razlag. Teorija je potrebna, vendar ne zadostna. Potreben je most od
-                razumevanja do dejanskega koraka, ki ga lahko naredite še danes.
+                Ta prostor je nastal, ker se starši srečujejo z velikimi izzivi in premalo konkretnih
+                rešitev in čustvene podpore. Na voljo nam je veliko znanja, teorij, raziskav in praks,
+                vendar kako se v vsem tem znajti in najti pravo pot, je zahtevno. Staršem želim ponuditi
+                čustveno podporo, razumevanje in jih opolnomočiti.
               </p>
               <p>
                 Starševstvo ne pozna družbenih slojev — stiske in vprašanja imajo vsi starši, zato si želim,
