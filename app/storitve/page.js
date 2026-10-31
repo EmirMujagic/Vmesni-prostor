@@ -1,3 +1,5 @@
+import Reveal from "../../components/Reveal";
+
 export const metadata = {
   title: "Storitve — Vmesni prostor",
   description: "Od hitrega odgovora do rednega spremljanja — psihološko svetovanje za starše najstnikov.",
@@ -57,12 +59,14 @@ export default function StoritvePage() {
             <h2>Preprosto, brez zapletenega postopka</h2>
           </div>
           <div className="process-grid">
-            {steps.map((s) => (
-              <div className="process-step" key={s.title}>
-                <span className="eyebrow">{s.eyebrow}</span>
-                <h3>{s.title}</h3>
-                <p>{s.text}</p>
-              </div>
+            {steps.map((s, i) => (
+              <Reveal key={s.title} delay={i * 120}>
+                <div className="process-step">
+                  <span className="eyebrow">{s.eyebrow}</span>
+                  <h3>{s.title}</h3>
+                  <p>{s.text}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -71,14 +75,16 @@ export default function StoritvePage() {
       <section>
         <div className="wrap">
           <div className="services-ladder">
-            {rungs.map((r) => (
-              <div className="rung" key={r.title}>
-                <div className="rung-tag">{r.tag}</div>
-                <div>
-                  <h3>{r.title}</h3>
-                  <p>{r.text}</p>
+            {rungs.map((r, i) => (
+              <Reveal key={r.title} delay={i * 120}>
+                <div className="rung">
+                  <div className="rung-tag">{r.tag}</div>
+                  <div>
+                    <h3>{r.title}</h3>
+                    <p>{r.text}</p>
+                  </div>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>

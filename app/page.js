@@ -3,6 +3,7 @@ import TranslatorWidget from "../components/TranslatorWidget";
 import QaForm from "../components/QaForm";
 import QaList from "../components/QaList";
 import HeroScene from "../components/HeroScene";
+import Reveal from "../components/Reveal";
 import { examples } from "../data/examples";
 
 export default function HomePage() {
@@ -53,12 +54,14 @@ export default function HomePage() {
           </div>
 
           <div className="archive-grid">
-            {examples.map((ex) => (
-              <div className="archive-card" key={ex.quote}>
-                <div className="tag">{ex.tag}</div>
-                <h3>{ex.quote}</h3>
-                <p>{ex.meaning}</p>
-              </div>
+            {examples.map((ex, i) => (
+              <Reveal key={ex.quote} delay={(i % 3) * 100}>
+                <div className="archive-card">
+                  <div className="tag">{ex.tag}</div>
+                  <h3>{ex.quote}</h3>
+                  <p>{ex.meaning}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
