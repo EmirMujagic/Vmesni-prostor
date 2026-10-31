@@ -23,7 +23,7 @@ export default function OMeniPage() {
                 Ljubljani. Zaposlena sem v šolstvu, kjer sem v vsakdanjem stiku z mladostniki — s tem, kar
                 jih dejansko obremenjuje, veseli in oblikuje. Delo opravljam pod supervizijo v okviru
                 projekta Superpsiholog, trenutno se usposabljam za pridobitev certifikata EuroPsy, sem pa
-                že licencirana trenerka programa COOL kids.
+                že licencirana trenerka programa COOL kids. Sem tudi članica Društva psihologov Slovenije.
               </p>
             </div>
             <div className="about-copy">
