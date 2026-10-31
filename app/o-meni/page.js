@@ -1,3 +1,5 @@
+import PageHeroAccent from "../../components/PageHeroAccent";
+
 export const metadata = {
   title: "O meni — Vmesni prostor",
   description: "Kristina Cvetković, mag. psihologije — kdo je z vami v Vmesnem prostoru.",
@@ -7,6 +9,7 @@ export default function OMeniPage() {
   return (
     <>
       <div className="page-hero">
+        <PageHeroAccent />
         <div className="wrap">
           <span className="eyebrow on-dusk">O meni</span>
           <h1>Kdo je z vami?</h1>

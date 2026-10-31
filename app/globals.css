@@ -156,6 +156,36 @@ nav.site-nav .wrap{
   width:600px;height:600px;
   background:radial-gradient(circle, rgba(216,164,175,0.16) 0%, transparent 70%);
   pointer-events:none;
+  animation:glow-drift 10s ease-in-out infinite;
+}
+@keyframes glow-drift{
+  0%, 100%{transform:translate(0,0) scale(1);}
+  50%{transform:translate(-30px,20px) scale(1.08);}
+}
+.page-hero, .contact-box{position:relative;overflow:hidden;}
+.page-hero::before, .contact-box::before{
+  content:'';
+  position:absolute;
+  top:-40%;left:-10%;
+  width:420px;height:420px;
+  background:radial-gradient(circle, rgba(216,164,175,0.14) 0%, transparent 70%);
+  pointer-events:none;
+  animation:glow-drift 12s ease-in-out infinite;
+}
+.page-hero > *, .contact-box > *{position:relative;}
+.page-hero-butterfly{
+  position:absolute;
+  top:18%;right:8%;
+  width:38px;height:38px;
+  animation:hero-butterfly-fly 6.5s ease-in-out infinite;
+  filter:drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+@media (max-width:860px){
+  .page-hero-butterfly{display:none;}
+}
+@media (prefers-reduced-motion: reduce){
+  .hero::before, .page-hero::before, .contact-box::before{animation:none;}
+  .page-hero-butterfly{animation:none;}
 }
 .hero .wrap{position:relative;}
 .hero-grid{
@@ -407,7 +437,9 @@ section{padding:88px 0;}
   border:1px solid var(--ash-line);
   border-radius:20px;
   padding:30px 32px;
+  transition:transform 0.25s ease, box-shadow 0.25s ease;
 }
+.qa-post:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(58,32,29,0.1);}
 .qa-post .qa-question{
   font-family:var(--font-fredoka), sans-serif;font-style:italic;
   font-size:1.15rem;color:var(--dusk);margin-bottom:12px;
@@ -433,7 +465,9 @@ section{padding:88px 0;}
   border-bottom:1px solid var(--ash-line);
   border-left:3px solid var(--dusk);
   align-items:start;
+  transition:border-left-color 0.25s ease, background 0.25s ease, padding-left 0.25s ease;
 }
+.rung:hover{border-left-color:var(--gold-deep);background:rgba(216,164,175,0.08);padding-left:26px;}
 .rung-tag{
   font-family:var(--font-space-mono), monospace;
   font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;

@@ -1,4 +1,5 @@
 import QaList from "../../components/QaList";
+import PageHeroAccent from "../../components/PageHeroAccent";
 
 export const metadata = {
   title: "Blog — Vmesni prostor",
@@ -9,6 +10,7 @@ export default function BlogPage() {
   return (
     <>
       <div className="page-hero">
+        <PageHeroAccent />
         <div className="wrap">
           <span className="eyebrow on-dusk">Blog</span>
           <h1>Vprašanja bralcev in odgovori</h1>

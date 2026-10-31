@@ -1,3 +1,5 @@
+import PageHeroAccent from "../../components/PageHeroAccent";
+
 export const metadata = {
   title: "Kontakt — Vmesni prostor",
   description: "Začnimo s kratkim, brezplačnim pogovorom.",
@@ -8,6 +10,7 @@ export default function KontaktPage() {
     <section>
       <div className="wrap">
         <div className="contact-box">
+          <PageHeroAccent />
           <div>
             <span className="eyebrow on-dusk">Kontakt</span>
             <h2>Začnimo s kratkim, brezplačnim pogovorom.</h2>

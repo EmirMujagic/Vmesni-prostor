@@ -1,4 +1,5 @@
 import Reveal from "../../components/Reveal";
+import PageHeroAccent from "../../components/PageHeroAccent";
 
 export const metadata = {
   title: "Storitve — Vmesni prostor",
@@ -45,6 +46,7 @@ export default function StoritvePage() {
   return (
     <>
       <div className="page-hero">
+        <PageHeroAccent />
         <div className="wrap">
           <span className="eyebrow on-dusk">Plačljivo · svetovanje</span>
           <h1>Od hitrega odgovora do rednega spremljanja</h1>
