@@ -66,13 +66,12 @@ export default function HomePage() {
               <span className="eyebrow on-dusk">Zastavi vprašanje</span>
               <h2>Imaš svoje vprašanje ali dilemo?</h2>
               <p>
-                Preden napišeš vprašanje, preizkusi{" "}
                 <a href="#prevajalnik" style={{ color: "inherit", textDecoration: "underline" }}>
-                  prevajalnik
+                  Preizkusi prevajalnik
                 </a>{" "}
-                zgoraj — morda je odgovor na tvojo dilemo že tam. Če ne, napiši splošno vprašanje ali
-                dilemo — izbrana vprašanja javno obravnavam spodaj, brez razkritja tvojega imena. Za
-                osebno, poglobljeno svetovanje si oglej{" "}
+                — zastavi dilemo, dvom ali vprašanje. Na tvoje vprašanje odgovorim poglobljeno skozi
+                prizmo strokovnosti in psihološkega znanja. Izbrana vprašanja javno obravnavam spodaj,
+                brez razkritja tvojega imena. Za osebno, poglobljeno svetovanje si oglej{" "}
                 <Link href="/storitve" style={{ color: "inherit", textDecoration: "underline" }}>
                   storitve
                 </Link>
