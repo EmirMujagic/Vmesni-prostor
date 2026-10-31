@@ -42,42 +42,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="archive">
-        <div className="wrap">
-          <div className="section-head">
-            <span className="eyebrow">Brezplačno · nov prevod vsak teden</span>
-            <h2>Prevajalnik vedenja otrok in najstnikov</h2>
-            <p>
-              Kratki zapisi, ki pogosto vedenje otrok in najstnikov prevajajo v razumljiv jezik za starše
-              skozi razvojno psihologijo in druge relevantne vidike psihologije.
-            </p>
-          </div>
-
-          <div className="archive-grid">
-            {examples.map((ex, i) => (
-              <Reveal key={ex.quote} delay={(i % 3) * 100}>
-                <div className="archive-card">
-                  <div className="tag">{ex.tag}</div>
-                  <h3>{ex.quote}</h3>
-                  <p>{ex.meaning}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section>
+      <section id="vprasaj">
         <div className="wrap">
           <div className="ask-box">
             <div>
               <span className="eyebrow on-dusk">Zastavi vprašanje</span>
               <h2>Imaš svoje vprašanje ali dilemo?</h2>
               <p>
-                <a href="#prevajalnik" style={{ color: "inherit", textDecoration: "underline" }}>
-                  Preizkusi prevajalnik
-                </a>{" "}
-                — zastavi dilemo, dvom ali vprašanje. Na tvoje vprašanje odgovorim poglobljeno skozi
+                Zastavi dilemo, dvom ali vprašanje. Na tvoje vprašanje odgovorim poglobljeno skozi
                 prizmo strokovnosti in psihološkega znanja. Določena vprašanja objavim javno, brez
                 razkritja tvojega imena, za namen pomoči ljudem v podobni stiski. Za osebno, poglobljeno
                 svetovanje si oglej{" "}
@@ -107,6 +79,31 @@ export default function HomePage() {
             <h2>Pošlji vprašanje</h2>
           </div>
           <QaForm />
+        </div>
+      </section>
+
+      <section className="archive">
+        <div className="wrap">
+          <div className="section-head">
+            <span className="eyebrow">Brezplačno · nov prevod vsak teden</span>
+            <h2>Prevajalnik vedenja otrok in najstnikov</h2>
+            <p>
+              Kratki zapisi, ki pogosto vedenje otrok in najstnikov prevajajo v razumljiv jezik za starše
+              skozi razvojno psihologijo in druge relevantne vidike psihologije.
+            </p>
+          </div>
+
+          <div className="archive-grid">
+            {examples.map((ex, i) => (
+              <Reveal key={ex.quote} delay={(i % 3) * 100}>
+                <div className="archive-card">
+                  <div className="tag">{ex.tag}</div>
+                  <h3>{ex.quote}</h3>
+                  <p>{ex.meaning}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
