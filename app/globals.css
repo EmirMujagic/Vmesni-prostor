@@ -179,42 +179,47 @@ nav.site-nav .wrap{
 .hero-scene{
   position:relative;
   width:100%;
-  max-width:400px;
+  max-width:420px;
   margin-left:auto;
 }
-.hero-illustration{
-  width:100%;height:auto;display:block;
+.hero-garden{
+  position:relative;
+  width:100%;
+  height:380px;
 }
-.hero-scene-butterfly{
+.hero-garden-item{
   position:absolute;
-  width:40px;height:40px;
-  top:4%;left:8%;
-  animation:hero-butterfly-fly 5s ease-in-out infinite;
-  filter:drop-shadow(0 4px 8px rgba(0,0,0,0.2));
-}
-.hero-scene-flower{
-  position:absolute;
-  width:30px;height:30px;
-  bottom:16%;right:4%;
-  animation:hero-flower-sway 4s ease-in-out infinite;
+  display:block;
+  animation:hero-flower-sway 4.5s ease-in-out infinite;
   transform-origin:bottom center;
+  filter:drop-shadow(0 6px 10px rgba(0,0,0,0.12));
+}
+.hero-garden-item svg{width:100%;height:100%;display:block;}
+.hero-garden-butterfly{
+  position:absolute;
+  width:46px;height:46px;
+  top:40%;left:40%;
+  animation:hero-butterfly-fly 6s ease-in-out infinite;
+  filter:drop-shadow(0 4px 8px rgba(0,0,0,0.2));
 }
 @keyframes hero-butterfly-fly{
   0%{transform:translate(0,0) rotate(0deg);}
-  25%{transform:translate(18px,-14px) rotate(8deg);}
-  50%{transform:translate(4px,-26px) rotate(-4deg);}
-  75%{transform:translate(-14px,-10px) rotate(-8deg);}
+  20%{transform:translate(40px,-30px) rotate(10deg);}
+  40%{transform:translate(70px,10px) rotate(-6deg);}
+  60%{transform:translate(20px,40px) rotate(8deg);}
+  80%{transform:translate(-30px,10px) rotate(-10deg);}
   100%{transform:translate(0,0) rotate(0deg);}
 }
 @keyframes hero-flower-sway{
-  0%, 100%{transform:rotate(-6deg);}
-  50%{transform:rotate(6deg);}
+  0%, 100%{transform:rotate(-5deg);}
+  50%{transform:rotate(5deg);}
 }
 @media (max-width:860px){
   .hero-scene{max-width:300px;margin:0 auto;}
+  .hero-garden{height:280px;}
 }
 @media (prefers-reduced-motion: reduce){
-  .hero-scene-butterfly, .hero-scene-flower{animation:none;}
+  .hero-garden-item, .hero-garden-butterfly{animation:none;}
 }
 
 /* TRANSLATOR WIDGET */
