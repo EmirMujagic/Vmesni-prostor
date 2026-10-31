@@ -452,7 +452,12 @@ footer.site-footer .wrap{display:flex;justify-content:space-between;font-size:0.
 /* RESPONSIVE */
 @media (max-width: 860px){
   .hero-grid, .about-grid, .ask-box, .contact-box{grid-template-columns:1fr;}
-  .pillar-grid, .archive-grid, .process-grid{grid-template-columns:1fr;}
+  .pillar-grid, .process-grid{grid-template-columns:1fr;}
+  .archive-grid{grid-template-columns:repeat(2, 1fr);gap:14px;}
+  .archive-card{padding:18px 16px;border-radius:18px 32px 20px 28px / 28px 16px 32px 18px;}
+  .archive-card .tag{font-size:0.6rem;margin-bottom:8px;}
+  .archive-card h3{font-size:0.95rem;}
+  .archive-card p{font-size:0.8rem;margin-top:8px;}
   .rung{grid-template-columns:1fr;}
   .nav-links{display:none;}
   .nav-cta{display:none;}
