@@ -182,44 +182,62 @@ nav.site-nav .wrap{
   max-width:420px;
   margin-left:auto;
 }
-.hero-garden{
+.hero-hands-bouquet{
   position:relative;
   width:100%;
-  height:380px;
+  height:420px;
 }
-.hero-garden-item{
+.hhb-hands{
+  position:absolute;
+  bottom:0;left:50%;
+  width:280px;height:280px;
+  transform:translateX(-50%);
+  filter:drop-shadow(0 10px 16px rgba(0,0,0,0.25));
+}
+.hhb-flower{
   position:absolute;
   display:block;
   animation:hero-flower-sway 4.5s ease-in-out infinite;
   transform-origin:bottom center;
-  filter:drop-shadow(0 6px 10px rgba(0,0,0,0.12));
+  filter:drop-shadow(0 4px 8px rgba(0,0,0,0.12));
 }
-.hero-garden-item svg{width:100%;height:100%;display:block;}
-.hero-garden-butterfly{
+.hhb-flower svg{width:100%;height:100%;display:block;}
+.hhb-butterfly{
   position:absolute;
-  width:46px;height:46px;
-  top:40%;left:40%;
+  width:44px;height:44px;
+  top:8%;right:10%;
   animation:hero-butterfly-fly 6s ease-in-out infinite;
   filter:drop-shadow(0 4px 8px rgba(0,0,0,0.2));
 }
+.hhb-sparkle{
+  position:absolute;
+  background:var(--gold);
+  clip-path:polygon(50% 0%, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0% 50%, 39% 39%);
+  animation:sparkle-twinkle 2.4s ease-in-out infinite;
+}
 @keyframes hero-butterfly-fly{
   0%{transform:translate(0,0) rotate(0deg);}
-  20%{transform:translate(40px,-30px) rotate(10deg);}
-  40%{transform:translate(70px,10px) rotate(-6deg);}
-  60%{transform:translate(20px,40px) rotate(8deg);}
-  80%{transform:translate(-30px,10px) rotate(-10deg);}
+  20%{transform:translate(24px,-18px) rotate(10deg);}
+  40%{transform:translate(40px,8px) rotate(-6deg);}
+  60%{transform:translate(10px,22px) rotate(8deg);}
+  80%{transform:translate(-18px,6px) rotate(-10deg);}
   100%{transform:translate(0,0) rotate(0deg);}
 }
 @keyframes hero-flower-sway{
   0%, 100%{transform:rotate(-5deg);}
   50%{transform:rotate(5deg);}
 }
+@keyframes sparkle-twinkle{
+  0%, 100%{opacity:0.2;transform:scale(0.6);}
+  50%{opacity:1;transform:scale(1);}
+}
 @media (max-width:860px){
   .hero-scene{max-width:300px;margin:0 auto;}
-  .hero-garden{height:280px;}
+  .hero-hands-bouquet{height:320px;}
+  .hhb-hands{width:220px;height:220px;}
 }
 @media (prefers-reduced-motion: reduce){
-  .hero-garden-item, .hero-garden-butterfly{animation:none;}
+  .hhb-flower, .hhb-butterfly, .hhb-sparkle{animation:none;}
 }
 
 /* TRANSLATOR WIDGET */

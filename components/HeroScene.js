@@ -1,9 +1,9 @@
-import HeroGarden from "./HeroGarden";
+import HeroHandsBouquet from "./HeroHandsBouquet";
 
 export default function HeroScene() {
   return (
     <div className="hero-scene" aria-hidden="true">
-      <HeroGarden />
+      <HeroHandsBouquet />
     </div>
   );
 }
