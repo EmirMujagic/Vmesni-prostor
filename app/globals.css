@@ -33,7 +33,7 @@ h1,h2,h3{
   letter-spacing:-0.01em;
 }
 a{color:inherit;}
-.wrap{max-width:1080px;margin:0 auto;padding:0 32px;}
+.wrap{max-width:1320px;margin:0 auto;padding:0 32px;}
 
 .eyebrow{
   font-family:var(--font-space-mono), monospace;
