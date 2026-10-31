@@ -247,6 +247,7 @@ section{padding:88px 0;}
 .section-head{max-width:720px;margin-bottom:52px;}
 .section-head h2{font-size:clamp(1.6rem,2.6vw,2.1rem);}
 .section-head p{margin-top:14px;color:#6b4a42;max-width:640px;}
+.section-head-wide, .section-head-wide p{max-width:900px;}
 
 /* PAGE HERO (non-home pages) */
 .page-hero{background:var(--dusk);color:var(--paper);padding:64px 0;}

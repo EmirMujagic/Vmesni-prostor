@@ -104,7 +104,7 @@ export default function HomePage() {
 
       <section className="archive">
         <div className="wrap">
-          <div className="section-head">
+          <div className="section-head section-head-wide">
             <span className="eyebrow">Objavljeno</span>
             <h2>Vprašanja bralcev in odgovori</h2>
             <p>
