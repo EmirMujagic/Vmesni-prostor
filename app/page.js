@@ -2,39 +2,42 @@ import Link from "next/link";
 import TranslatorWidget from "../components/TranslatorWidget";
 import QaForm from "../components/QaForm";
 import QaList from "../components/QaList";
+import HeroButterflies from "../components/HeroButterflies";
 import { examples } from "../data/examples";
 
 export default function HomePage() {
   return (
     <>
-      <header className="hero" id="prevajalnik">
+      <header className="hero hero-open" id="prevajalnik">
         <div className="wrap">
-          <div className="hero-grid">
-            <div>
-              <span className="eyebrow on-dusk">Psihološka podpora in svetovanje</span>
-              <h1>
-                Otroci in najstniki govorijo v svojem jeziku. Pomagam vam <em>ga razumeti</em>.
-              </h1>
-              <p className="lede">
-                Starševstvo je ena najbolj zahtevnih vlog, ki od nas zahteva ogromno veščin, znanja in
-                čustvene prožnosti. Tako kot se naučimo hoditi in govoriti, se lahko naučimo tudi veščin,
-                ki nas opolnomočijo v eni od najbolj zahtevnih vlog. Tukaj je varen prostor za starše, ki
-                iščejo konkretne rešitve in si želijo bolje razumeti svoje otroke. Psihologija otrok in
-                mladostnikov, prevedena v jezik vsakdanjih večerov.
-              </p>
-              <div className="hero-ctas">
-                <a className="btn-primary" href="#vprasaj">
-                  Vstopi v prevajalnik
-                </a>
-                <Link className="btn-ghost on-dusk" href="/storitve">
-                  Poglej storitve
-                </Link>
-              </div>
+          <div className="hero-intro">
+            <span className="eyebrow on-dusk">Psihološka podpora in svetovanje</span>
+            <h1>
+              Otroci in najstniki govorijo v svojem jeziku. Pomagam vam <em>ga razumeti</em>.
+            </h1>
+            <p className="lede">
+              Starševstvo je ena najbolj zahtevnih vlog, ki se je, tako kot hojo ali govor, vedno znova
+              učimo. Tukaj je varen prostor za starše, ki iščejo konkretne rešitve in si želijo bolje
+              razumeti svoje otroke.
+            </p>
+            <div className="hero-ctas">
+              <a className="btn-primary" href="#vprasaj">
+                Vstopi v prevajalnik
+              </a>
+              <Link className="btn-ghost on-dusk" href="/storitve">
+                Poglej storitve
+              </Link>
             </div>
-            <TranslatorWidget />
           </div>
         </div>
+        <HeroButterflies />
       </header>
+
+      <section className="translator-section">
+        <div className="wrap">
+          <TranslatorWidget />
+        </div>
+      </section>
 
       <section className="archive">
         <div className="wrap">

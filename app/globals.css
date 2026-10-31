@@ -149,12 +149,15 @@ nav.site-nav .wrap{
   pointer-events:none;
 }
 .hero .wrap{position:relative;}
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.1fr 0.9fr;
-  gap:64px;
-  align-items:start;
-}
+.hero-open{padding:120px 0 180px;}
+.hero-intro{max-width:720px;margin:0 auto;text-align:center;}
+.hero-intro h1{max-width:none;}
+.hero-intro .lede{margin-left:auto;margin-right:auto;}
+.hero-intro .hero-ctas{justify-content:center;}
+.hero-intro .eyebrow{justify-content:center;}
+
+.translator-section{padding-top:56px;padding-bottom:40px;}
+.translator-section .translator{margin:0 auto;}
 .hero h1{
   font-size:clamp(2.1rem,4vw,3rem);
   line-height:1.15;
@@ -171,6 +174,49 @@ nav.site-nav .wrap{
   color:rgba(245,239,229,0.85);
 }
 .hero-ctas{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
+
+/* BUTTERFLY */
+.butterfly-fly{
+  position:absolute;
+  width:64px;height:auto;
+  animation:butterfly-float 7s ease-in-out infinite;
+  filter:drop-shadow(0 6px 14px rgba(0,0,0,0.18));
+}
+.hero-flock{
+  position:absolute;
+  left:0;right:0;bottom:0;
+  height:90px;
+  pointer-events:none;
+  overflow:visible;
+}
+.hero-flock-item.butterfly-fly{
+  position:absolute;
+  bottom:-18px;
+  z-index:2;
+}
+@media (max-width:860px){
+  .hero-flock{height:60px;}
+  .hero-flock-item.butterfly-fly{transform:scale(0.75);}
+}
+.butterfly-wing-left, .butterfly-wing-right{
+  transform-origin:50px 42px;
+  animation:butterfly-flap 0.42s ease-in-out infinite;
+}
+.butterfly-wing-right{animation-delay:0.01s;}
+@keyframes butterfly-flap{
+  0%, 100%{transform:scaleX(1);}
+  50%{transform:scaleX(0.55);}
+}
+@keyframes butterfly-float{
+  0%{transform:translate(0, 0) rotate(0deg);}
+  25%{transform:translate(-14px, -18px) rotate(-4deg);}
+  50%{transform:translate(6px, -32px) rotate(3deg);}
+  75%{transform:translate(18px, -12px) rotate(2deg);}
+  100%{transform:translate(0, 0) rotate(0deg);}
+}
+@media (prefers-reduced-motion: reduce){
+  .butterfly-fly, .butterfly-wing-left, .butterfly-wing-right{animation:none;}
+}
 
 /* TRANSLATOR WIDGET */
 .translator{
@@ -452,7 +498,8 @@ footer.site-footer .wrap{display:flex;justify-content:space-between;font-size:0.
 
 /* RESPONSIVE */
 @media (max-width: 860px){
-  .hero-grid, .about-grid, .ask-box, .contact-box{grid-template-columns:1fr;}
+  .about-grid, .ask-box, .contact-box{grid-template-columns:1fr;}
+  .hero-open{padding:80px 0 120px;}
   .pillar-grid, .process-grid{grid-template-columns:1fr;}
   .archive-grid{grid-template-columns:repeat(2, 1fr);gap:14px;}
   .archive-card{padding:18px 16px;border-radius:18px 32px 20px 28px / 28px 16px 32px 18px;}
