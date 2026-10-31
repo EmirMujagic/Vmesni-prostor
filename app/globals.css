@@ -187,8 +187,14 @@ nav.site-nav .wrap{
   width:100%;
   height:420px;
 }
+.hhb-flower-row{
+  position:absolute;
+  left:0;right:0;bottom:0;
+  height:90px;
+}
 .hhb-flower{
   position:absolute;
+  bottom:0;
   display:block;
   animation:hero-flower-sway 4.5s ease-in-out infinite;
   transform-origin:bottom center;
