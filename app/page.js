@@ -1,8 +1,8 @@
 import Link from "next/link";
 import TranslatorWidget from "../components/TranslatorWidget";
 import QaForm from "../components/QaForm";
+import QaList from "../components/QaList";
 import { examples } from "../data/examples";
-import { qaPosts } from "../data/qaPosts";
 
 export default function HomePage() {
   return (
@@ -108,19 +108,7 @@ export default function HomePage() {
               od enega vprašanja koristi marsikdo, ki se znajde v podobni situaciji.
             </p>
           </div>
-          <div className="qa-list">
-            {qaPosts.map((post, i) => (
-              <div className="qa-post" key={i}>
-                <span className="qa-date">{post.date}</span>
-                <div className="qa-question">{post.question}</div>
-                {post.answer.map((para, j) => (
-                  <p className="qa-answer" key={j}>
-                    {para}
-                  </p>
-                ))}
-              </div>
-            ))}
-          </div>
+          <QaList />
         </div>
       </section>
     </>
