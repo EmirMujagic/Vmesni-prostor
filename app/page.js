@@ -11,7 +11,7 @@ export default function HomePage() {
         <div className="wrap">
           <div className="hero-grid">
             <div>
-              <span className="eyebrow on-dusk">Psihološka podpora za starše</span>
+              <span className="eyebrow on-dusk">Psihološka podpora in svetovanje</span>
               <h1>
                 Otroci in najstniki govorijo v svojem jeziku. Pomagam vam <em>ga razumeti</em>.
               </h1>
