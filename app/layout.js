@@ -25,6 +25,9 @@ export const metadata = {
   title: "Vmesni prostor — psihološka podpora za starše najstnikov",
   description:
     "Prevajalnik vedenja otrok in najstnikov ter psihološka podpora staršem — razumite, kaj vaš najstnik resnično sporoča.",
+  verification: {
+    google: "uKYjbgbwTG0F2jbpyhMhikon3BjWIqbxZgmT_406MDA",
+  },
 };
 
 export default function RootLayout({ children }) {
