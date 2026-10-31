@@ -187,13 +187,6 @@ nav.site-nav .wrap{
   width:100%;
   height:420px;
 }
-.hhb-hands{
-  position:absolute;
-  bottom:0;left:50%;
-  width:280px;height:280px;
-  transform:translateX(-50%);
-  filter:drop-shadow(0 10px 16px rgba(0,0,0,0.25));
-}
 .hhb-flower{
   position:absolute;
   display:block;
@@ -204,16 +197,8 @@ nav.site-nav .wrap{
 .hhb-flower svg{width:100%;height:100%;display:block;}
 .hhb-butterfly{
   position:absolute;
-  width:44px;height:44px;
-  top:8%;right:10%;
   animation:hero-butterfly-fly 6s ease-in-out infinite;
   filter:drop-shadow(0 4px 8px rgba(0,0,0,0.2));
-}
-.hhb-sparkle{
-  position:absolute;
-  background:var(--gold);
-  clip-path:polygon(50% 0%, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0% 50%, 39% 39%);
-  animation:sparkle-twinkle 2.4s ease-in-out infinite;
 }
 @keyframes hero-butterfly-fly{
   0%{transform:translate(0,0) rotate(0deg);}
@@ -227,17 +212,12 @@ nav.site-nav .wrap{
   0%, 100%{transform:rotate(-5deg);}
   50%{transform:rotate(5deg);}
 }
-@keyframes sparkle-twinkle{
-  0%, 100%{opacity:0.2;transform:scale(0.6);}
-  50%{opacity:1;transform:scale(1);}
-}
 @media (max-width:860px){
   .hero-scene{max-width:300px;margin:0 auto;}
   .hero-hands-bouquet{height:320px;}
-  .hhb-hands{width:220px;height:220px;}
 }
 @media (prefers-reduced-motion: reduce){
-  .hhb-flower, .hhb-butterfly, .hhb-sparkle{animation:none;}
+  .hhb-flower, .hhb-butterfly{animation:none;}
 }
 
 /* TRANSLATOR WIDGET */
