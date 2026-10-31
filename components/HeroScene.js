@@ -2,9 +2,9 @@ import HandFlower from "./HandFlower";
 import Butterfly from "./Butterfly";
 
 const hands = [
-  { left: "4%", width: 110, sleeve: "var(--dusk-2)", petal: "var(--gold)" },
-  { left: "34%", width: 130, sleeve: "var(--sage)", petal: "var(--pink-tint)" },
-  { left: "66%", width: 110, sleeve: "var(--ink)", petal: "var(--gold-deep)" },
+  { left: "4%", width: 100, skin: "#e8b89a", petal: "var(--gold)" },
+  { left: "36%", width: 120, skin: "#c98a63", petal: "var(--pink-tint)" },
+  { left: "68%", width: 100, skin: "#8a5a3f", petal: "var(--gold-deep)" },
 ];
 
 const butterflies = [
@@ -21,7 +21,7 @@ export default function HeroScene() {
         <HandFlower
           key={i}
           className="hero-scene-hand"
-          sleeve={h.sleeve}
+          skin={h.skin}
           petal={h.petal}
           style={{ left: h.left, width: h.width }}
         />
