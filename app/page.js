@@ -19,10 +19,7 @@ export default function HomePage() {
               </h1>
               <p className="lede">
                 <strong>Vmesni prostor</strong> je spletna platforma za starše najstnikov — brezplačen
-                prevajalnik vedenja in vprašanj ter psihološko svetovanje na enem mestu. Starševstvo je
-                ena najbolj zahtevnih vlog, ki se je, tako kot hojo ali govor, vedno znova učimo. Tukaj je
-                varen prostor za starše, ki iščejo konkretne rešitve in si želijo bolje razumeti svoje
-                otroke.
+                prevajalnik vedenja in vprašanj ter psihološko svetovanje na enem mestu.
               </p>
               <div className="hero-ctas">
                 <a className="btn-primary" href="#vprasaj">
@@ -51,6 +48,11 @@ export default function HomePage() {
               <span className="eyebrow on-dusk">Zastavi vprašanje</span>
               <h2>Imaš svoje vprašanje ali dilemo?</h2>
               <p>
+                Starševstvo je ena najbolj zahtevnih vlog, ki se je, tako kot hojo ali govor, vedno znova
+                učimo. Tukaj je varen prostor za starše, ki iščejo konkretne rešitve in si želijo bolje
+                razumeti svoje otroke.
+                <br />
+                <br />
                 Zastavi dilemo, dvom ali vprašanje. Na tvoje vprašanje odgovorim poglobljeno skozi
                 prizmo strokovnosti in psihološkega znanja. Določena vprašanja objavim javno, brez
                 razkritja tvojega imena, za namen pomoči ljudem v podobni stiski. Za osebno, poglobljeno

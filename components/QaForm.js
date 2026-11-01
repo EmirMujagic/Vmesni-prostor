@@ -38,7 +38,7 @@ export default function QaForm() {
 
   return (
     <form className="qa-form" id="vprasaj" onSubmit={handleSubmit}>
-      <label htmlFor="ime">Ime (ali vzdevek)</label>
+      <label htmlFor="ime">Ime</label>
       <input type="text" id="ime" name="ime" required />
 
       <label htmlFor="email">Email (samo za odgovor, ni javen)</label>

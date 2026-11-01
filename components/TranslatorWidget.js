@@ -34,6 +34,9 @@ export default function TranslatorWidget() {
           →
         </button>
       </div>
+      <a className="btn-primary translator-cta" href="#vprasaj">
+        Vstopi v prevajalnik
+      </a>
     </div>
   );
 }
