@@ -128,7 +128,7 @@ export default function HomePage() {
       <section className="archive">
         <div className="wrap">
           <div className="section-head">
-            <span className="eyebrow">Brezplačno · nov prevod vsak teden</span>
+            <span className="eyebrow">Prostor znanja in varnosti za vse</span>
             <h2>Prevajalnik vedenja otrok in najstnikov</h2>
             <p>
               Kratki zapisi, ki pogosto vedenje otrok in najstnikov prevajajo v razumljiv jezik za starše
