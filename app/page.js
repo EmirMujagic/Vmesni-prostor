@@ -40,9 +40,8 @@ export default function HomePage() {
         <div className="wrap">
           <div className="translator-section-grid">
             <p className="translator-section-text">
-              Starševstvo je ena najbolj zahtevnih vlog, ki se je, tako kot hojo ali govor, vedno znova
-              učimo. Tukaj je varen prostor za starše, ki iščejo konkretne rešitve in si želijo bolje
-              razumeti svoje otroke.
+              Starševstvo je vloga, pri kateri se, tako kot pri vsem v življenju, moramo opolnomočiti z
+              različnimi veščinami, se nenehno učiti in izpopolnjevati.
             </p>
             <TranslatorWidget />
           </div>
