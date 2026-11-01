@@ -37,7 +37,7 @@ body{
 }
 h1,h2,h3{
   font-family:var(--font-fredoka), sans-serif;
-  font-weight:500;
+  font-weight:600;
   margin:0;
   letter-spacing:-0.01em;
 }
@@ -46,15 +46,16 @@ a{color:inherit;}
 
 .eyebrow{
   font-family:var(--font-space-mono), monospace;
-  font-size:0.72rem;
+  font-size:0.74rem;
+  font-weight:700;
   letter-spacing:0.14em;
   text-transform:uppercase;
-  color:var(--sage);
+  color:var(--gold-deep);
   display:flex;
   align-items:center;
   margin-bottom:14px;
 }
-.eyebrow.on-dusk{ color:var(--sage-on-dusk); }
+.eyebrow.on-dusk{ color:var(--gold); }
 .eyebrow::before{
   content:'';
   display:inline-block;
