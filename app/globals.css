@@ -197,7 +197,21 @@ nav.site-nav .wrap{
 }
 
 .translator-section{padding-top:56px;padding-bottom:40px;}
+.translator-section-grid{
+  display:grid;
+  grid-template-columns:0.85fr 1.15fr;
+  gap:48px;
+  align-items:center;
+}
+.translator-section-text{
+  font-size:1.05rem;
+  color:#6b4a42;
+  line-height:1.7;
+}
 .translator-section .translator{margin:0 auto;}
+@media (max-width:860px){
+  .translator-section-grid{grid-template-columns:1fr;}
+}
 .hero h1{
   font-size:clamp(2.1rem,4vw,3rem);
   line-height:1.15;

@@ -37,22 +37,24 @@ export default function HomePage() {
 
       <section className="translator-section">
         <div className="wrap">
-          <TranslatorWidget />
+          <div className="translator-section-grid">
+            <p className="translator-section-text">
+              Starševstvo je ena najbolj zahtevnih vlog, ki se je, tako kot hojo ali govor, vedno znova
+              učimo. Tukaj je varen prostor za starše, ki iščejo konkretne rešitve in si želijo bolje
+              razumeti svoje otroke.
+            </p>
+            <TranslatorWidget />
+          </div>
         </div>
       </section>
 
-      <section id="vprasaj">
+      <section>
         <div className="wrap">
           <div className="ask-box">
             <div>
               <span className="eyebrow on-dusk">Zastavi vprašanje</span>
               <h2>Imaš svoje vprašanje ali dilemo?</h2>
               <p>
-                Starševstvo je ena najbolj zahtevnih vlog, ki se je, tako kot hojo ali govor, vedno znova
-                učimo. Tukaj je varen prostor za starše, ki iščejo konkretne rešitve in si želijo bolje
-                razumeti svoje otroke.
-                <br />
-                <br />
                 Zastavi dilemo, dvom ali vprašanje. Na tvoje vprašanje odgovorim poglobljeno skozi
                 prizmo strokovnosti in psihološkega znanja. Določena vprašanja objavim javno, brez
                 razkritja tvojega imena, za namen pomoči ljudem v podobni stiski. Za osebno, poglobljeno
@@ -76,7 +78,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section>
+      <section id="vprasaj">
         <div className="wrap">
           <div className="section-head">
             <span className="eyebrow">Vprašaj</span>
