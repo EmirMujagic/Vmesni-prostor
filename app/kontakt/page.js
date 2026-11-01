@@ -14,7 +14,7 @@ export default function KontaktPage() {
           <div>
             <span className="eyebrow on-dusk">Kontakt</span>
             <h2>Začnimo s kratkim, brezplačnim pogovorom.</h2>
-            <p>Napišite nekaj besed o tem, kaj vas trenutno skrbi — odgovorim osebno, brez avtomatiziranih predlog.</p>
+            <p>Napišite nekaj besed o tem, kaj vas trenutno skrbi, odgovorim osebno, brez avtomatiziranih predlog.</p>
             <div className="contact-details">
               <a href="mailto:vmesniprostor@gmail.com">vmesniprostor@gmail.com</a>
             </div>

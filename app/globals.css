@@ -176,9 +176,9 @@ nav.site-nav .wrap{
 .page-hero > *, .contact-box > *, .ask-box > *{position:relative;}
 .page-hero-butterfly{
   position:absolute;
-  top:18%;right:8%;
-  width:38px;height:38px;
-  animation:hero-butterfly-fly 6.5s ease-in-out infinite;
+  animation-name:hero-butterfly-fly;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count:infinite;
   filter:drop-shadow(0 4px 8px rgba(0,0,0,0.2));
 }
 @media (max-width:860px){

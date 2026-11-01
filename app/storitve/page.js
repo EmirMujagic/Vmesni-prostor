@@ -3,24 +3,24 @@ import PageHeroAccent from "../../components/PageHeroAccent";
 
 export const metadata = {
   title: "Storitve — Vmesni prostor",
-  description: "Od hitrega odgovora do rednega spremljanja — psihološko svetovanje za starše najstnikov.",
+  description: "Od hitrega odgovora do rednega spremljanja, psihološko svetovanje za starše najstnikov.",
 };
 
 const rungs = [
   {
     tag: "Enkratno",
     title: "Kratek posvet",
-    text: "45-minutni video pogovor za eno konkretno dilemo — kadar želite razmisliti na glas in dobiti usmeritev.",
+    text: "45-minutni video pogovor za eno konkretno dilemo, kadar želite razmisliti na glas in dobiti usmeritev.",
   },
   {
     tag: "Redno",
     title: "Spremljanje skozi obdobje",
-    text: "3–5 sej za izzive, ki se ne rešijo v enem pogovoru — sprememba vedenja, daljši konflikt, prehodno obdobje.",
+    text: "3–5 sej za izzive, ki se ne rešijo v enem pogovoru, sprememba vedenja, daljši konflikt, prehodno obdobje.",
   },
   {
     tag: "Skupinsko",
     title: "Podporna skupina za starše",
-    text: "Manjša, redno se sestajajoča skupina staršev — prostor za izmenjavo izkušenj in skupno delo skozi daljše obdobje, pod mojim strokovnim vodstvom.",
+    text: "Manjša, redno se sestajajoča skupina staršev, prostor za izmenjavo izkušenj in skupno delo skozi daljše obdobje, pod mojim strokovnim vodstvom.",
   },
 ];
 
@@ -28,17 +28,17 @@ const steps = [
   {
     eyebrow: "Pogovor",
     title: "Kratek uvodni klepet",
-    text: "Na kratko opišete, s čim se soočate. Brezplačno, brez zaveze — namen je razumeti, ali in kako lahko pomagam.",
+    text: "Na kratko opišete, s čim se soočate. Brezplačno, brez zaveze, namen je razumeti, ali in kako lahko pomagam.",
   },
   {
     eyebrow: "Presoja",
     title: "Skupaj izberemo pravi korak",
-    text: "Glede na situacijo predlagam ustrezno stopnjo — pisen odgovor, kratek posvet ali daljše spremljanje. Kadar gre za nujno stisko, vas usmerim k ustrezni strokovni pomoči.",
+    text: "Glede na situacijo predlagam ustrezno stopnjo, pisen odgovor, kratek posvet ali daljše spremljanje. Kadar gre za nujno stisko, vas usmerim k ustrezni strokovni pomoči.",
   },
   {
     eyebrow: "Delo",
     title: "Dejansko svetovanje",
-    text: "Rezervirate termin, plačate preko strani, in dobite konkretno, prilagojeno podporo — ne splošnih nasvetov.",
+    text: "Rezervirate termin, plačate preko strani, in dobite konkretno, prilagojeno podporo, ne splošnih nasvetov.",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function StoritvePage() {
         <div className="wrap">
           <span className="eyebrow on-dusk">Plačljivo · svetovanje</span>
           <h1>Od hitrega odgovora do rednega spremljanja</h1>
-          <p>Ni nujno, da začnete z največjo zavezo. Vsaka stopnja je samostojna — uporabite tisto, ki ustreza vaši trenutni situaciji.</p>
+          <p>Ni nujno, da začnete z največjo zavezo. Vsaka stopnja je samostojna, uporabite tisto, ki ustreza vaši trenutni situaciji.</p>
         </div>
       </div>
 

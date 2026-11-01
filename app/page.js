@@ -18,7 +18,7 @@ export default function HomePage() {
                 Otroci in najstniki govorijo v svojem jeziku. Pomagam vam <em>ga razumeti</em>.
               </h1>
               <p className="lede">
-                <strong>Vmesni prostor</strong> je spletna platforma za starše najstnikov — brezplačen
+                <strong>Vmesni prostor</strong> je spletna platforma za starše najstnikov, brezplačen
                 prevajalnik vedenja in vprašanj ter psihološko svetovanje na enem mestu.
               </p>
               <div className="hero-ctas">
@@ -118,7 +118,7 @@ export default function HomePage() {
             <h2>Vprašanja bralcev in odgovori</h2>
             <p>
               Nekatera vprašanja in odgovore objavljam javno, ker si želim, da je Vmesni prostor dostopen
-              prav vsem staršem — ne le tistim, ki si lahko privoščijo individualno svetovanje. Tako lahko
+              prav vsem staršem, ne le tistim, ki si lahko privoščijo individualno svetovanje. Tako lahko
               od enega vprašanja koristi marsikdo, ki se znajde v podobni situaciji.
             </p>
           </div>

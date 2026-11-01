@@ -63,7 +63,7 @@ export default function QaForm() {
       {status === "ok" && <p className="form-status ok">Hvala! Vprašanje je bilo poslano.</p>}
       {status === "err" && (
         <p className="form-status err">
-          Pošiljanje trenutno ni na voljo — obrazec še ni povezan. Piši direktno na{" "}
+          Pošiljanje trenutno ni na voljo, obrazec še ni povezan. Piši direktno na{" "}
           <a href="/kontakt" style={{ textDecoration: "underline" }}>
             kontaktno stran
           </a>

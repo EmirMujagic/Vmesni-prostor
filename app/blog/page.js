@@ -3,7 +3,7 @@ import PageHeroAccent from "../../components/PageHeroAccent";
 
 export const metadata = {
   title: "Blog — Vmesni prostor",
-  description: "Vprašanja bralcev in odgovori — psihološka podpora staršem najstnikov.",
+  description: "Vprašanja bralcev in odgovori, psihološka podpora staršem najstnikov.",
 };
 
 export default function BlogPage() {
@@ -16,7 +16,7 @@ export default function BlogPage() {
           <h1>Vprašanja bralcev in odgovori</h1>
           <p>
             Nekatera vprašanja in odgovore objavljam javno, ker si želim, da je Vmesni prostor dostopen
-            prav vsem staršem — ne le tistim, ki si lahko privoščijo individualno svetovanje. Tako lahko
+            prav vsem staršem, ne le tistim, ki si lahko privoščijo individualno svetovanje. Tako lahko
             od enega vprašanja koristi marsikdo, ki se znajde v podobni situaciji.
           </p>
         </div>

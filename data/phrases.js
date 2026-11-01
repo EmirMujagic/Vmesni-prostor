@@ -9,7 +9,7 @@ export const phrases = [
   {
     quote: '"Nič ni bilo." (na vprašanje, kako je bilo v šoli)',
     meaning:
-      "Šola je eden redkih prostorov, ki je resnično njegov — kratek odgovor ta prostor ščiti, ne pomeni brezbrižnosti do vas.",
+      "Šola je eden redkih prostorov, ki je resnično njegov, kratek odgovor ta prostor ščiti, ne pomeni brezbrižnosti do vas.",
   },
   {
     quote: '"Vseeno mi je."',
@@ -18,6 +18,6 @@ export const phrases = [
   {
     quote: '"Ti pa itak ne razumeš."',
     meaning:
-      "Del iskanja lastne identitete, ločene od staršev — razvojno pričakovan korak, ne dejanska ocena vas kot starša.",
+      "Del iskanja lastne identitete, ločene od staršev, razvojno pričakovan korak, ne dejanska ocena vas kot starša.",
   },
 ];
