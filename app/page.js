@@ -48,6 +48,44 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section>
+        <div className="wrap">
+          <div className="section-head">
+            <span className="eyebrow">Postopek</span>
+            <h2>Kako deluje prevajalnik?</h2>
+          </div>
+          <div className="process-grid">
+            <Reveal delay={0}>
+              <div className="process-step">
+                <span className="eyebrow">1. Vprašaš</span>
+                <h3>Zastaviš vprašanje ali dilemo</h3>
+                <p>Napišeš, s čim se soočaš, kratko ali podrobno, kakor ti ustreza.</p>
+              </div>
+            </Reveal>
+            <Reveal delay={120}>
+              <div className="process-step">
+                <span className="eyebrow">2. Odgovorim</span>
+                <h3>Odgovorim ti osebno</h3>
+                <p>
+                  Na tvoje vprašanje odgovorim poglobljeno, skozi prizmo strokovnosti in psihološkega
+                  znanja.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={240}>
+              <div className="process-step">
+                <span className="eyebrow">3. Objava</span>
+                <h3>Nekateri odgovori gredo na blog</h3>
+                <p>
+                  Določene odgovore objavim na blogu platforme, da pomagajo tudi drugim staršem s podobno
+                  stisko. Nobenih zaupnih podatkov ne razkrivam.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       <section id="vprasaj">
         <div className="wrap">
           <div className="ask-section-grid">
