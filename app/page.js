@@ -48,43 +48,42 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section>
-        <div className="wrap">
-          <div className="ask-box">
-            <div>
-              <span className="eyebrow on-dusk">Zastavi vprašanje</span>
-              <h2>Imaš svoje vprašanje ali dilemo?</h2>
-              <p>
-                Zastavi dilemo, dvom ali vprašanje. Na tvoje vprašanje odgovorim poglobljeno skozi
-                prizmo strokovnosti in psihološkega znanja. Določena vprašanja objavim javno, brez
-                razkritja tvojega imena, za namen pomoči ljudem v podobni stiski. Za osebno, poglobljeno
-                svetovanje si oglej{" "}
-                <Link href="/storitve" style={{ color: "inherit", textDecoration: "underline" }}>
-                  storitve
-                </Link>
-                .
-              </p>
-            </div>
-            <div className="ask-note">
-              <strong>Ta obrazec ne nadomešča nujne pomoči</strong>
-              Če gre za akutno stisko, samopoškodovanje ali ogroženost, poglej kontaktne podatke za nujno
-              pomoč na strani{" "}
-              <Link href="/kontakt" style={{ color: "inherit", textDecoration: "underline" }}>
-                Kontakt
-              </Link>
-              .
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="vprasaj">
         <div className="wrap">
-          <div className="section-head">
-            <span className="eyebrow">Vprašaj</span>
-            <h2>Pošlji vprašanje</h2>
+          <div className="ask-section-grid">
+            <div className="ask-box">
+              <div>
+                <span className="eyebrow on-dusk">Zastavi vprašanje</span>
+                <h2>Imaš svoje vprašanje ali dilemo?</h2>
+                <p>
+                  Zastavi dilemo, dvom ali vprašanje. Na tvoje vprašanje odgovorim poglobljeno skozi
+                  prizmo strokovnosti in psihološkega znanja. Določena vprašanja objavim javno, brez
+                  razkritja tvojega imena, za namen pomoči ljudem v podobni stiski. Za osebno, poglobljeno
+                  svetovanje si oglej{" "}
+                  <Link href="/storitve" style={{ color: "inherit", textDecoration: "underline" }}>
+                    storitve
+                  </Link>
+                  .
+                </p>
+              </div>
+              <div className="ask-note">
+                <strong>Ta obrazec ne nadomešča nujne pomoči</strong>
+                Če gre za akutno stisko, samopoškodovanje ali ogroženost, poglej kontaktne podatke za nujno
+                pomoč na strani{" "}
+                <Link href="/kontakt" style={{ color: "inherit", textDecoration: "underline" }}>
+                  Kontakt
+                </Link>
+                .
+              </div>
+            </div>
+            <div className="ask-form-col">
+              <div className="section-head">
+                <span className="eyebrow">Vprašaj</span>
+                <h2>Pošlji vprašanje</h2>
+              </div>
+              <QaForm />
+            </div>
           </div>
-          <QaForm />
         </div>
       </section>
 
