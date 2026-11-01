@@ -18,8 +18,9 @@ export default function HomePage() {
                 Otroci in najstniki govorijo v svojem jeziku. Pomagam vam <em>ga razumeti</em>.
               </h1>
               <p className="lede">
-                <strong>Vmesni prostor</strong> je spletna platforma za starše najstnikov, brezplačen
-                prevajalnik vedenja in vprašanj ter psihološko svetovanje na enem mestu.
+                <strong>Vmesni prostor</strong> je psihološka platforma za boljše razumevanje vedenja
+                najstnikov in otrok. Namenjena je vsem staršem, ki se na svoji poti srečujejo z izzivi,
+                dilemami, dvomi ter problemi.
               </p>
               <div className="hero-ctas">
                 <a className="btn-primary" href="#vprasaj">
